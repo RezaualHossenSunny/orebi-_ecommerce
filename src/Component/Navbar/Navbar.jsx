@@ -3,8 +3,8 @@ import logo from '../../assets/Logo.png'
 import Flex from '../Layout/Flex'
 const Navbar = () => {
   return (
-    <div className='max-w-container mx-auto py-8'>
-  <Flex className='items-center'>
+    <div className='max-w-container mx-auto '>
+  <Flex className='items-center py-8'>
        {/* logo */}
        <div className='w-1/4'>
         <img src={logo} alt='navbar logo'/>
