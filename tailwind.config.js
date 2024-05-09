@@ -13,6 +13,9 @@ export default {
         'dm': [ "DM Sans", "sans-seri"]
       
       },
+      colors: {
+        'primary': '#262626',
+      },
     },
   },
   plugins: [],
