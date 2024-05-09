@@ -8,7 +8,11 @@ export default {
     extend: {
       maxWidth: {
         'container': '1604px',
-      }
+      },
+      fontFamily: {
+        'dm': [ "DM Sans", "sans-seri"]
+      
+      },
     },
   },
   plugins: [],
