@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Container from '../Layout/Container'
 import Flex from '../Layout/Flex'
 import { HiBars3BottomLeft } from "react-icons/hi2";
@@ -6,15 +6,42 @@ import { FaSearch } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
 import { RxTriangleDown } from "react-icons/rx";
 import { TbShoppingCartFilled } from "react-icons/tb";
+import Dropdown from '../Layout/Dropdown';
 const Heder = () => {
+  const ref =useRef()
+  const [show, setShow] =useState(false)
+  useEffect(()=>{
+  document.body.addEventListener('click',(e)=>{
+
+    if(ref.current.contains(e.target)){
+      setShow(true)
+    }else{
+      setShow(false)
+    }
+  })
+  },[])
   return (
     <div className='bg-comon'>
         <Container className='py-10'>
             <Flex className='justify-between'>
             {/* bar */}
-                <div className='flex items-center gap-x-3 font-dm text-primary'>
-                <HiBars3BottomLeft className=' text-1xl' />
+                <div>
+               <Dropdown  dropRef={ref}>
+               <div className='flex items-center gap-x-3 font-dm text-primary'>
+               <HiBars3BottomLeft className=' text-1xl' />
                 <p className='text-sm font-normal'>Shop by Category</p>
+
+         
+               </div>
+               {
+                show &&
+                <ul className='absolute'>
+                  <li>ghg</li>
+                  <li>ghg</li>
+                  <li>ghg</li>
+                </ul>
+              }
+               </Dropdown>
                 </div>
 
                 {/* srach */}
