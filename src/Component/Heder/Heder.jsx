@@ -26,8 +26,8 @@ const Heder = () => {
             <Flex className='justify-between'>
             {/* bar */}
                 <div>
-               <Dropdown  dropRef={ref}>
-               <div className='flex items-center gap-x-3 font-dm text-primary'>
+               <Dropdown className='relative' dropRef={ref}>
+               <div className='flex items-center gap-x-3 font-dm text-primary cursor-pointer'>
                <HiBars3BottomLeft className=' text-1xl' />
                 <p className='text-sm font-normal'>Shop by Category</p>
 
@@ -35,10 +35,13 @@ const Heder = () => {
                </div>
                {
                 show &&
-                <ul className='absolute'>
-                  <li>ghg</li>
-                  <li>ghg</li>
-                  <li>ghg</li>
+                <ul className='absolute top-10  bg-primary w-[263px] text-[#BEBEBE]'>
+                  <li className='py-4 px-5 border-b  font-dm text-base border-y-[#2D2D2D]  hover:text-white hover:mx-2.5 ease-in-out duration-300  hover:font-bold'>Accesories</li>
+                  <li className='py-4 px-5 border-b font-dm text-base border-y-[#2D2D2D] hover:text-white hover:mx-2.5 ease-in-out duration-300  hover:font-bold'>Furniture</li>
+                  <li className='py-4 px-5 border-b font-dm text-base border-y-[#2D2D2D] hover:text-white hover:mx-2.5 ease-in-out duration-300  hover:font-bold'>Electronics</li>
+                  <li className='py-4 px-5 border-b font-dm text-base border-y-[#2D2D2D] hover:text-white hover:mx-2.5 ease-in-out duration-300  hover:font-bold'>Clothes</li>
+                  <li className='py-4 px-5 border-b font-dm text-base border-y-[#2D2D2D] hover:text-white hover:mx-2.5 ease-in-out duration-300  hover:font-bold'>Bags</li>
+                  <li className='py-4 px-5 border-b font-dm text-base border-y-[#2D2D2D] hover:text-white hover:mx-2.5 ease-in-out duration-300  hover:font-bold'>Home Apliance</li>
                 </ul>
               }
                </Dropdown>
