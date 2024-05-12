@@ -46,7 +46,7 @@ const Heder = () => {
             <Flex className='justify-between'>
             {/* bar */}
                 <div className='items-center'>
-               <Dropdown className='relative' dropRef={ref}>
+               <Dropdown className='relative z-50' dropRef={ref}>
                <div className='flex items-center gap-x-3 font-dm text-primary cursor-pointer'>
                <HiBars3BottomLeft className=' text-1xl' />
                 <p className='text-sm font-normal'>Shop by Category</p>
@@ -79,7 +79,7 @@ const Heder = () => {
 
      {/* add to card */}
                 <div className='flex  items-center  cursor-pointer'>
-                <Dropdown className='relative' dropRef={Userref}>
+                <Dropdown className='relative z-50' dropRef={Userref}>
                 <div className='flex items-center '>
                     <IoPersonSharp className='text-xl' />
                     <RxTriangleDown className='mt-1 text-xl' />
@@ -95,7 +95,7 @@ const Heder = () => {
                 </Dropdown>
                  
 
-                 <Dropdown className='relative' dropRef={cardref}>
+                 <Dropdown className='relative z-50' dropRef={cardref}>
 
                  <div className='items-center'>
                     <TbShoppingCartFilled className='text-xl ml-10 ' />
