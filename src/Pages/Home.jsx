@@ -2,6 +2,7 @@ import React from 'react'
 import Baner from '../Component/Baner/Baner'
 import Additional from '../Component/Additional/Additional'
 import Advrise from '../Component/Adversie/Advrise'
+import Arrivals from '../Component/Arrivals/Arrivals'
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
        <Baner/>
        <Additional/>
        <Advrise/>
+       <Arrivals/>
     </>
   )
 }
