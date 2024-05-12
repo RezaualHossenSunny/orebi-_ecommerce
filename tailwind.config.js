@@ -15,7 +15,8 @@ export default {
       },
       colors: {
         'primary': '#262626',
-        'comon':"#F5F5F3"
+        'comon':"#F5F5F3",
+        'second': "#6D6D6D",
       },
     },
   },

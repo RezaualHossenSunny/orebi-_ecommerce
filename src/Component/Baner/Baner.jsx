@@ -72,7 +72,7 @@ const Baner = () => {
         )
       };
   return (
-    <>
+    <div className='bg-comon w-full'>
     
       <Slider {...settings}>
         <div >
@@ -91,7 +91,7 @@ const Baner = () => {
       </Slider>
     
 
-    </>
+    </div>
   )
 }
 
