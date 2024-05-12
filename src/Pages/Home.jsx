@@ -5,6 +5,7 @@ import Advrise from '../Component/Adversie/Advrise'
 import Arrivals from '../Component/Arrivals/Arrivals'
 import Bestseler from '../Component/Bestsler/Bestseler'
 import Award from '../Component/Award/Award'
+import Specialoffer from '../Component/Specialoffer/Specialoffer'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
        <Arrivals/>
        <Bestseler/>
        <Award/>
+       <Specialoffer/>
     </>
   )
 }
