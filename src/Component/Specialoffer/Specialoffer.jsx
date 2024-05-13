@@ -7,7 +7,7 @@ const Specialoffer = () => {
   return (
     <div className='py-14'>
     <Container>
-        <p className=' font-dm text-primary font-bold text-[39px]'>Our Bestseler</p>
+        <p className=' font-dm text-primary font-bold text-[39px]'>Special Offer</p>
          
          <Flex className=' gap-x-10'>
          <Producat badge={true}/>
