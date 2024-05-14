@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Rootlayout from './Component/Layout/Rootlayout.jsx';
 import Home from './Pages/Home.jsx';
+import Shope from './Pages/Shope.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
     >
       
         <Route index element={<Home />} />
+        <Route path='/shope' element={<Shope />} />
        
      
     </Route>
