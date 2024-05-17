@@ -16,8 +16,9 @@ const Shope = () => {
             <div className='w-1/4	'>
 sss
             </div>
-            <div className='w-3/4	'>
+            <div className='w-3/4	 relative'>
              <Pagination itemsPerPage={12} />
+          
            
             </div>
           </Flex>
