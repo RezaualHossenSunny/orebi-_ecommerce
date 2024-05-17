@@ -8,7 +8,7 @@ import Pagination from '../Component/Layout/Pagination';
 const Shope = () => {
    const [show,setShow]=useState(12)
   const handlechange = (e)=>{
-    setShow(e.target.value);
+    setShow(+e.target.value);
   }
 
 
