@@ -3,6 +3,7 @@ import Container from '../Component/Layout/Container'
 import Breadcrumbs from '../Component/Layout/Breadcrumbs'
 import Flex from './../Component/Layout/Flex';
 import Pagination from '../Component/Layout/Pagination';
+import Leftsidebar from '../Component/Layout/Leftsidebar';
 
 
 const Shope = () => {
@@ -21,9 +22,16 @@ const Shope = () => {
 
 
         <Flex className='gap-x-10 mt-32'>
+{/* leftside */}
           <div className='w-1/4	'>
-            sss
+          <Leftsidebar/>
+
+
+          
           </div>
+
+
+          {/* rightside */}
           <div className='w-3/4	 relative'>
 
             {/* show dropdown */}
