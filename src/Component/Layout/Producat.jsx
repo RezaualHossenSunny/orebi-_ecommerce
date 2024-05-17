@@ -10,7 +10,7 @@ const Producat = ({ badge }) => {
     <div className='py-12'>
       <div className='relative overflow-y-hidden group '>
 
-        <img src={p1} />
+        <img className='w-[100%]' src={p1} />
         {
           badge &&
           <Badge title="New" />

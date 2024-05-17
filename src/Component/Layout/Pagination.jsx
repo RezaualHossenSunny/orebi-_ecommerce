@@ -69,7 +69,7 @@ const Pagination = ({ itemsPerPage }) => {
         previousClassName="hidden"
         nextClassName="page-item"
       />
-         <p className='text-[#767676] font-dm font-normal text-base absolute bottom-[50px] right-0'>Products from {select} to {itemOffset +itemsPerPage} of 80</p>
+         <p className='text-[#767676] font-dm font-normal text-base absolute bottom-[50px] right-0'>Products from {select} to {itemOffset +itemsPerPage} of {items.length}</p>
     </div>
   )
 }
